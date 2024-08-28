@@ -1,23 +1,30 @@
+import { Travel } from "../models/Travel.js"
+
 const pageStart = (req,res) => {
-    res.render('inicio',{
+    res.render('home_page',{
         page: 'Inicio'
     })
 }
 
 const pageUs = (req,res) => {
-    res.render('nosotros',{
+    res.render('uspage',{
         page: 'Nosotros'
     })
 }
 
-const pageTravels = (req,res)=> {
-    res.render('viajes',{
+const pageTravels = async (req,res)=> {
+
+    // consultar bd
+    const travels = await Travel.findAll() 
+    console.log(travels); 
+
+    res.render('travelpage',{
         page: 'Viajes'
     })
 }
 
 const pageTestimonials = (req,res) => {
-    res.render('testimoniales',{
+    res.render('testimonialspage',{
         page: 'Testimoniales'
     })
 } 

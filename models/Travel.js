@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 import db from '../config/database.js';
 
-export const Travel = db.define('travel',{
+export const Travel = db.define('travels',{
     title:{
         type: Sequelize.STRING
     },
@@ -23,7 +23,7 @@ export const Travel = db.define('travel',{
     available:{
         type : Sequelize.STRING
     },
-    slig:{
+    slug:{
         type: Sequelize.STRING
     }
 })

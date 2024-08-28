@@ -4,10 +4,10 @@ const router = express.Router();
 
 router.get('/',pageStart)
 
-router.get('/nosotros',pageUs)
+router.get('/uspage',pageUs)
 
-router.get('/testimoniales', pageTestimonials)
+router.get('/testimonialspage', pageTestimonials)
 
-router.get('/viajes', pageTravels)
+router.get('/travelpage', pageTravels)
 
 export default router

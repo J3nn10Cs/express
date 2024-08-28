@@ -1,19 +1,13 @@
 import express from 'express'
+import { pageStart,pageTestimonials,pageTravels,pageUs } from '../controllers/controllerPage.js';
 const router = express.Router();
 
-router.get('/', (req,res) => { //request lo que enviamos - response express responde
-    res.render('Inicio')
-})
+router.get('/',pageStart)
 
-router.get('/nosotros', (req,res) => {
+router.get('/nosotros',pageUs)
 
-    const travel = 'Viaje a Alemania'
+router.get('/testimoniales', pageTestimonials)
 
-    //para pasar vistas
-    res.render('Nosotros',{
-        // textTravel : travel
-        travel
-    })
-})
+router.get('/viajes', pageTravels)
 
 export default router

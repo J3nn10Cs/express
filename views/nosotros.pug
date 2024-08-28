@@ -1,6 +1,29 @@
 extends ./layout/index
 
 block contains
-    p Nosotros
+    main.container.mt-5 
+        .row 
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="nosotros", class="img-fluid")
+            .col-md-7
+                h1= page
+                blockquote Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro blanditiis nam quod, natus similique repellendus fugit recusandae? Quos sit incidunt nam iste ullam provident reiciendis porro accusamus voluptates quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam, magni veniam quos pariatur totam sunt porro asperiores dolorem corporis voluptas numquam nemo veritatis ipsam possimus dolores exercitationem maiores quidem? Lorem ipsum dolor sit amet consectetur, adipisicing 
 
-    img(src="img/cupon.jpg", alt="cupones", srcset="")
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro blanditiis nam quod, natus similique repellendus fugit recusandae? Quos sit incidunt nam iste ullam provident reiciendis porro accusamus voluptates quis. Lorem ipsum dolor sit amet 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro blanditiis nam quod, natus similique repellendus fugit recusandae? Quos sit incidunt nam iste ullam provident reiciendis porro accusamus voluptates quis. Lorem ipsum dolor sit amet numquam nemo veritatis ipsam possimus dolores exercitationem maiores quidem? Lorem ipsum dolor sit amet consectetur, adipisicing 
+
+        .listado-iconos
+            .container.mt-5.py-5.text-center
+                .row
+                    .col-md-4
+                        img(src="img/icono_seguridad.svg", alt="icono seguridad" class="img-fluid-md-4")
+                        h2.mb-4 Seguridad
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veritatis dolore, laudantium nihil et velit aliquam consequatur quas at accusantium odio esse necessitatibus similique est quibusdam incidunt pariatur placeat maiores!
+                    .col-md-4
+                        img(src="img/icono_destinos.svg", alt="icono destinos" class="img-fluid-md-4")
+                        h2.mb-4 Mejores destinos
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veritatis dolore, laudantium nihil et velit aliquam consequatur quas at accusantium odio esse necessitatibus similique est quibusdam incidunt pariatur placeat maiores!
+                    .col-md-4
+                        img(src="img/icono_precios.svg", alt="icono precios" class="img-fluid-md-4")
+                        h2.mb-4 Mejores precios
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veritatis dolore, laudantium nihil et velit aliquam consequatur quas at accusantium odio esse necessitatibus similique est quibusdam incidunt pariatur placeat maiores!

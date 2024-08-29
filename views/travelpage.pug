@@ -1,6 +1,7 @@
 extends ./layout/index
 
 block contains
-    main.container.mt-5
-        .row
-            h1= page 
+        h1(class="mt-5 text-center") #{page}
+        main.container.mt-5
+            include ./layout/block_travel.pug
+        

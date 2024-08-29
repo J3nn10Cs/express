@@ -1,6 +1,32 @@
 extends ./layout/index
 
+block slider
+    .slider
+        h1 Rio de Janeiro 
+        e Aentura
+
 block contains
     main.container.mt-5
-        .row 
-            h1= page
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5 
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta id, doloribus numquam commodi itaque veniam eligendi, sit, facilis facere esse suscipit perferendis quibusdam beatae nulla eius exercitationem! Delectus, quidem aut.
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tenetur praesentium fugit ab veniam laudantium possimus quis reprehenderit minus fuga rem deleniti architecto nisi quam quod, repellat facilis iusto velit. ipsum dolor sit amet consectetur adipisicing elit. Autem molestias, aliquid ipsum fugit sint inventore voluptatum nemo vel voluptate eveniet animi fugiat harum saepe. Voluptates consequatur commodi quisquam delectus modi.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+        
+        include ./layout/block_travel.pug
+
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 10 de Setiembre - 25 de Setiembre 
+                        p.precio $500
+
+    .container
+        h2.text-center.mt-5 Testimoniales 
+        include ./layout/block_testimonials
